@@ -9,9 +9,4 @@ class IndexController extends BaseController {
             return $this->loginRedirect();
         }
     }
-
-    public function testAction() {
-        echo "index/test";
-        die();
-    }
 }
