@@ -215,3 +215,8 @@ exec {'/etc/init.d/queue start':
     command => '/etc/init.d/queue start',
     require => Exec['update-rc.d -f queue defaults']
 }
+
+package { 'nodejs':
+    ensure => installed,
+    require => Exec['install php libraries'],
+}
