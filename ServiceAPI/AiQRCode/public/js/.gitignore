@@ -1,0 +1,4 @@
+# grunt node modules
+node_modules
+# bower folder
+vendor
